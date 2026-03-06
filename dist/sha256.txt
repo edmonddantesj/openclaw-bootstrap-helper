@@ -1,1 +1,1 @@
-f244154f36d3647955b914ab765ab01544e582eebfd6fc402fd0596af548bf42  dist/openclaw-bootstrap-helper.skill
+cabf9804cba1b96f935aeda5bdea557098e2c8d8bb5a96b2f3c6d15c3047585f  dist/openclaw-bootstrap-helper.skill

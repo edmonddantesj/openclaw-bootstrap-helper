@@ -16,12 +16,18 @@ Use this skill when a user says things like:
   - `python3 skills/public/openclaw-bootstrap-helper/scripts/diagnose_openclaw_env.py`
 - Paste the output into the chat.
 
-### 2) Generate a safe install/update command (copy/paste)
+### 2) Summarize a pasted terminal error into one next step (non-dev friendly)
+- Run:
+  - `python3 skills/public/openclaw-bootstrap-helper/scripts/summarize_install_error.py --text "<PASTE_ERROR>"`
+  - or: `python3 skills/public/openclaw-bootstrap-helper/scripts/summarize_install_error.py --file /path/to/log.txt`
+- Output is a single blocker + next action.
+
+### 3) Generate a safe install/update command (copy/paste)
 - Run:
   - `python3 skills/public/openclaw-bootstrap-helper/scripts/generate_skill_install_cmd.py --url <RELEASES_SKILL_URL> --skill openclaw-telegram-topics-router`
 - The script prints OS-specific commands.
 
-### 3) Safety defaults
+### 4) Safety defaults
 - Do NOT request sudo by default.
 - Prefer "safe-mode": generate a command for the user to copy/paste.
 - If the environment blocks exec, explain the blocker and provide the minimal next action.
