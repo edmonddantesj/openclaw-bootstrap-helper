@@ -31,6 +31,7 @@ PACKS_DIR = SKILL_ROOT / "packs"
 
 
 PACK_FILE_BY_NAME = {
+    "skip": "__SKIP__",
     "minimal": "pack_minimal.txt",
     "recommended": "pack_recommended.txt",
     "full-lite": "pack_full_lite.txt",
@@ -66,6 +67,12 @@ def main() -> int:
     catalog_path = PACKS_DIR / "catalog.json"
     catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
     skills: dict = catalog.get("skills", {})
+
+    if args.pack == "skip":
+        print("# OpenClaw Bootstrap Helper — Pack install commands")
+        print("# pack=skip include_restricted=False")
+        print("# (skip mode) No install commands generated.")
+        return 0
 
     pack_file = PACKS_DIR / PACK_FILE_BY_NAME[args.pack]
     slugs = _read_pack_slugs(pack_file)

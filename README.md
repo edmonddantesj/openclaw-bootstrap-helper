@@ -22,6 +22,9 @@ unzip -o /tmp/openclaw-bootstrap-helper.skill -d skills/public/openclaw-bootstra
 Generate commands for a pack (safe-mode: prints commands only):
 
 ```bash
+# Skip (print nothing)
+python3 skills/public/openclaw-bootstrap-helper/scripts/generate_pack_install_cmd.py --pack skip
+
 python3 skills/public/openclaw-bootstrap-helper/scripts/generate_pack_install_cmd.py --pack minimal
 python3 skills/public/openclaw-bootstrap-helper/scripts/generate_pack_install_cmd.py --pack recommended
 python3 skills/public/openclaw-bootstrap-helper/scripts/generate_pack_install_cmd.py --pack full-lite
