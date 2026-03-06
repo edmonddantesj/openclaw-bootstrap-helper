@@ -11,6 +11,10 @@ Use this skill when a user says things like:
 
 ## What to do
 
+### 0) OpenClaw doctor (install + env)
+- Run:
+  - `python3 skills/public/openclaw-bootstrap-helper/scripts/openclaw_doctor.py`
+
 ### 1) Run a quick diagnosis (no secrets)
 - Run:
   - `python3 skills/public/openclaw-bootstrap-helper/scripts/diagnose_openclaw_env.py`
@@ -35,3 +39,5 @@ Use this skill when a user says things like:
 ## References
 - For common fixes, see:
   - `references/BLOCKERS.md`
+- For channel setup checklists:
+  - `references/ONBOARD_GUIDES.md`
