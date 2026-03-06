@@ -31,6 +31,11 @@ Use this skill when a user says things like:
   - `python3 skills/public/openclaw-bootstrap-helper/scripts/generate_skill_install_cmd.py --url <RELEASES_SKILL_URL> --skill openclaw-telegram-topics-router`
 - The script prints OS-specific commands.
 
+### 3-b) Optional: execute install after explicit user YES
+- Ask the user: "자동으로 진행할까?" (Do you want me to run it automatically?)
+- Only if the user says YES, run:
+  - `python3 skills/public/openclaw-bootstrap-helper/scripts/run_skill_install.py --url <RELEASES_SKILL_URL> --skill openclaw-telegram-topics-router --execute`
+
 ### 4) Safety defaults
 - Do NOT request sudo by default.
 - Prefer "safe-mode": generate a command for the user to copy/paste.
