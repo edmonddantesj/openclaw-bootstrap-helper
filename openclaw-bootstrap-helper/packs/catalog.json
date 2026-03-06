@@ -6,6 +6,46 @@
       "url": "https://github.com/edmonddantesj/openclaw-bootstrap-helper/releases/latest/download/openclaw-bootstrap-helper.skill",
       "tags": ["lite"],
       "desc": "Non-developer install/update helper: diagnostics + copy/paste command generator."
+    },
+    "aoi-openclaw-security-toolkit-core": {
+      "url": "https://github.com/edmonddantesj/aoi-skills/releases/latest/download/aoi-openclaw-security-toolkit-core.skill",
+      "tags": ["lite"],
+      "desc": "(Lite) Fail-closed security toolkit: allowlists, secret scans, and injection detection."
+    },
+    "aoi-prompt-injection-sentinel": {
+      "url": "https://github.com/edmonddantesj/aoi-skills/releases/latest/download/aoi-prompt-injection-sentinel.skill",
+      "tags": ["lite"],
+      "desc": "(Lite) Lightweight prompt-injection detector with severity scoring and rule-based blocking."
+    },
+    "aoi-sandbox-shield-lite": {
+      "url": "https://github.com/edmonddantesj/aoi-skills/releases/latest/download/aoi-sandbox-shield-lite.skill",
+      "tags": ["lite"],
+      "desc": "(Lite) Workspace safety: snapshots of critical configs and JSON validation."
+    },
+    "aoi-squad-orchestrator-lite": {
+      "url": "https://github.com/edmonddantesj/aoi-skills/releases/latest/download/aoi-squad-orchestrator-lite.skill",
+      "tags": ["lite"],
+      "desc": "(Lite) 3-role squad orchestration with stable pseudonyms and fixed report schema."
+    },
+    "aoi-triple-memory-lite": {
+      "url": "https://github.com/edmonddantesj/aoi-skills/releases/latest/download/aoi-triple-memory-lite.skill",
+      "tags": ["lite"],
+      "desc": "(Lite) Triple memory: file search and decision notes templates."
+    },
+    "aoi-council": {
+      "url": "https://github.com/edmonddantesj/aoi-skills/releases/latest/download/aoi-council.skill",
+      "tags": ["lite"],
+      "desc": "(Lite) Multi-perspective decision synthesis and consensus templates."
+    },
+    "aoi-hackathon-scout-lite": {
+      "url": "https://github.com/edmonddantesj/aoi-skills/releases/latest/download/aoi-hackathon-scout-lite.skill",
+      "tags": ["lite"],
+      "desc": "(Lite) Public-safe hackathon source registry and filtering output."
+    },
+    "aoi-demo-clip-maker": {
+      "url": "https://github.com/edmonddantesj/aoi-skills/releases/latest/download/aoi-demo-clip-maker.skill",
+      "tags": ["lite"],
+      "desc": "(Lite) Terminal-only utility to record screen and create demo clips on macOS."
     }
   }
 }

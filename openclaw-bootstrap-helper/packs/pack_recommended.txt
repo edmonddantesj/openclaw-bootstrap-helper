@@ -1,1 +1,5 @@
 openclaw-bootstrap-helper
+aoi-openclaw-security-toolkit-core
+aoi-prompt-injection-sentinel
+aoi-sandbox-shield-lite
+aoi-squad-orchestrator-lite
