@@ -9,12 +9,23 @@ It also supports **install packs** (minimal / recommended / full) while keeping 
 
 ## Install (latest .skill)
 
+### macOS / Linux (Terminal)
+
 ```bash
 set -euo pipefail
 URL="https://github.com/edmonddantesj/openclaw-bootstrap-helper/releases/latest/download/openclaw-bootstrap-helper.skill"
 mkdir -p skills/public/openclaw-bootstrap-helper
 curl -fsSL "$URL" -o /tmp/openclaw-bootstrap-helper.skill
 unzip -o /tmp/openclaw-bootstrap-helper.skill -d skills/public/openclaw-bootstrap-helper
+```
+
+### Windows (PowerShell)
+
+```powershell
+$URL = "https://github.com/edmonddantesj/openclaw-bootstrap-helper/releases/latest/download/openclaw-bootstrap-helper.skill"
+New-Item -ItemType Directory -Force -Path "skills\public\openclaw-bootstrap-helper" | Out-Null
+Invoke-WebRequest $URL -OutFile "$env:TEMP\openclaw-bootstrap-helper.skill"
+Expand-Archive -Force "$env:TEMP\openclaw-bootstrap-helper.skill" "skills\public\openclaw-bootstrap-helper"
 ```
 
 ## Packs (copy/paste command generator)
