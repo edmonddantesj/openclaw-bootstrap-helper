@@ -4,3 +4,4 @@ aoi-prompt-injection-sentinel
 aoi-sandbox-shield-lite
 aoi-squad-orchestrator-lite
 openclaw-telegram-topics-router
+aoi-triple-memory-lite
