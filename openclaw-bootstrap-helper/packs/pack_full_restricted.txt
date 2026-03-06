@@ -1,0 +1,2 @@
+# Intentionally empty by default.
+# Put wallet/payment/autopost/credential-handling skills here (opt-in).

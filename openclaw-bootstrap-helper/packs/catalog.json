@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "note": "Pinned catalog. Keep this stable and add new skills explicitly (avoid scraping).",
+  "skills": {
+    "openclaw-bootstrap-helper": {
+      "url": "https://github.com/edmonddantesj/openclaw-bootstrap-helper/releases/latest/download/openclaw-bootstrap-helper.skill",
+      "tags": ["lite"],
+      "desc": "Non-developer install/update helper: diagnostics + copy/paste command generator."
+    }
+  }
+}
