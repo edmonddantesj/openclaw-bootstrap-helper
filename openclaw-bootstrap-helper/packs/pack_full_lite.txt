@@ -7,3 +7,4 @@ aoi-triple-memory-lite
 aoi-council
 aoi-hackathon-scout-lite
 aoi-demo-clip-maker
+openclaw-telegram-topics-router
