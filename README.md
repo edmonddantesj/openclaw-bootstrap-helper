@@ -16,6 +16,16 @@ It also supports **install packs** (minimal / recommended / full) while keeping 
 
 ### macOS / Linux (Terminal)
 
+#### Option A) One-shot pre-bootstrap (recommended for first-time users)
+Installs OpenClaw if missing, then installs this skill.
+
+```bash
+curl -fsSL https://github.com/edmonddantesj/openclaw-bootstrap-helper/releases/latest/download/prebootstrap_macos.sh | bash
+```
+
+#### Option B) Install this skill only
+(Use this when OpenClaw is already installed.)
+
 ```bash
 set -euo pipefail
 URL="https://github.com/edmonddantesj/openclaw-bootstrap-helper/releases/latest/download/openclaw-bootstrap-helper.skill"
