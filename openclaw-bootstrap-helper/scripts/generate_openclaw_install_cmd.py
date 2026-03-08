@@ -20,35 +20,44 @@ def main() -> int:
     ap.add_argument(
         "--os",
         required=True,
-        choices=["macos", "windows-wsl", "windows-gitbash", "linux"],
+        choices=[
+            "macos",
+            "linux",
+            "windows-powershell",
+            "windows-wsl",
+        ],
         help="Target environment",
     )
     args = ap.parse_args()
 
     if args.os == "macos":
-        print("# macOS (Homebrew)")
-        print("brew install openclaw")
+        print("# macOS (recommended) — installer script")
+        print("curl -fsSL https://openclaw.ai/install.sh | bash")
         print("openclaw status")
         return 0
 
     if args.os == "linux":
-        print("# Linux")
-        print("# Install method depends on distro/package manager.")
-        print("# If you already have npm/pnpm: you can install OpenClaw via npm.")
-        print("npm install -g openclaw")
+        print("# Linux (recommended) — installer script")
+        print("curl -fsSL https://openclaw.ai/install.sh | bash")
         print("openclaw status")
         return 0
 
     if args.os == "windows-wsl":
-        print("# Windows (WSL Ubuntu) — run in PowerShell")
-        print("wsl.exe bash -lc 'set -euo pipefail; npm install -g openclaw; openclaw status'")
+        print("# Windows (WSL2 Ubuntu) — recommended")
+        print("# 1) Install WSL2 (PowerShell as Admin): wsl --install")
+        print("# 2) Then run OpenClaw installer in Ubuntu:")
+        print("wsl.exe bash -lc 'curl -fsSL https://openclaw.ai/install.sh | bash' ")
+        print("wsl.exe bash -lc 'openclaw status'")
         return 0
 
-    if args.os == "windows-gitbash":
-        print("# Windows (Git Bash)")
-        print("# Requires Node.js + npm")
-        print("npm install -g openclaw")
+    if args.os == "windows-powershell":
+        print("# Windows (PowerShell) — installer script")
+        print("iwr -useb https://openclaw.ai/install.ps1 | iex")
         print("openclaw status")
+        print("")
+        print("# If 'openclaw' is not recognized after install:")
+        print("# - Run: npm config get prefix")
+        print("# - Add that directory to your user PATH, reopen PowerShell")
         return 0
 
     return 0
