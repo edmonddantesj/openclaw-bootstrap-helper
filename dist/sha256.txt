@@ -1,1 +1,2 @@
-03c6b29f284f4bb439d9f6aa9caf68b1bdecd0c7e85dddee6e7be1f9117f00bf  dist/openclaw-bootstrap-helper.skill
+989161010868e013724e09f3173112330e5ed08c1c900039b3e0be0e2279343a  dist/openclaw-bootstrap-helper.skill
+df1e6a5cf4e2357e8b7903720f10bb79cd68446dc05998ee7fe22342155debef  dist/prebootstrap_windows.ps1

@@ -26,6 +26,16 @@ unzip -o /tmp/openclaw-bootstrap-helper.skill -d skills/public/openclaw-bootstra
 
 ### Windows (PowerShell)
 
+#### Option A) One-shot pre-bootstrap (recommended for first-time users)
+Installs Git (best-effort), installs OpenClaw if missing, then installs this skill.
+
+```powershell
+iwr -useb https://github.com/edmonddantesj/openclaw-bootstrap-helper/releases/latest/download/prebootstrap_windows.ps1 | iex
+```
+
+#### Option B) Install this skill only
+(Use this when OpenClaw is already installed.)
+
 ```powershell
 $URL = "https://github.com/edmonddantesj/openclaw-bootstrap-helper/releases/latest/download/openclaw-bootstrap-helper.skill"
 New-Item -ItemType Directory -Force -Path "skills\public\openclaw-bootstrap-helper" | Out-Null
