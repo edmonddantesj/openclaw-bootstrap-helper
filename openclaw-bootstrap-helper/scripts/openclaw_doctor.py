@@ -66,9 +66,12 @@ def main() -> int:
 
     print("NEXT:")
     if which("openclaw") == "(missing)":
-        print("- OpenClaw is not installed. Generate install commands:")
-        print("  python3 skills/public/openclaw-bootstrap-helper/scripts/generate_openclaw_install_cmd.py --os macos")
-        print("  python3 skills/public/openclaw-bootstrap-helper/scripts/generate_openclaw_install_cmd.py --os windows-wsl")
+        print("- OpenClaw is not installed.")
+        print("  Generate copy/paste install commands:")
+        print("  - Windows (PowerShell): python3 skills/public/openclaw-bootstrap-helper/scripts/generate_openclaw_install_cmd.py --os windows-powershell")
+        print("  - Windows (WSL2):      python3 skills/public/openclaw-bootstrap-helper/scripts/generate_openclaw_install_cmd.py --os windows-wsl")
+        print("  - macOS:               python3 skills/public/openclaw-bootstrap-helper/scripts/generate_openclaw_install_cmd.py --os macos")
+        print("  - Linux:               python3 skills/public/openclaw-bootstrap-helper/scripts/generate_openclaw_install_cmd.py --os linux")
     else:
         print("- If channels/models are not configured, run: openclaw onboard")
 

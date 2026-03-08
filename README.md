@@ -9,6 +9,11 @@ It also supports **install packs** (minimal / recommended / full) while keeping 
 
 ## Install (latest .skill)
 
+> Important: this section installs the **skill**.
+> If OpenClaw itself is not installed yet, install OpenClaw first:
+> - Windows (PowerShell): `iwr -useb https://openclaw.ai/install.ps1 | iex`
+> - macOS/Linux: `curl -fsSL https://openclaw.ai/install.sh | bash`
+
 ### macOS / Linux (Terminal)
 
 ```bash
@@ -27,6 +32,10 @@ New-Item -ItemType Directory -Force -Path "skills\public\openclaw-bootstrap-help
 Invoke-WebRequest $URL -OutFile "$env:TEMP\openclaw-bootstrap-helper.skill"
 Expand-Archive -Force "$env:TEMP\openclaw-bootstrap-helper.skill" "skills\public\openclaw-bootstrap-helper"
 ```
+
+### (Common mistake) Do NOT download the GitHub repo ZIP
+Downloading `https://github.com/edmonddantesj/openclaw-bootstrap-helper` as a ZIP gives you **source code**, not an installer.
+Use the `.skill` URL above.
 
 ## Packs (copy/paste command generator)
 
