@@ -100,4 +100,18 @@ Typical use:
 Current location in repo:
 - `openclaw-backup-restore/`
 
+Install this skill directly:
+
+### macOS / Linux
+
+```bash
+set -euo pipefail; URL="https://github.com/edmonddantesj/openclaw-bootstrap-helper/releases/latest/download/openclaw-backup-restore.skill"; mkdir -p skills/public/openclaw-backup-restore; curl -fsSL "$URL" -o /tmp/openclaw-backup-restore.skill; unzip -o /tmp/openclaw-backup-restore.skill -d skills/public/openclaw-backup-restore
+```
+
+### Windows (PowerShell)
+
+```powershell
+$URL = "https://github.com/edmonddantesj/openclaw-bootstrap-helper/releases/latest/download/openclaw-backup-restore.skill"; New-Item -ItemType Directory -Force -Path "skills\public\openclaw-backup-restore" | Out-Null; Invoke-WebRequest $URL -OutFile "$env:TEMP\openclaw-backup-restore.skill"; Expand-Archive -Force "$env:TEMP\openclaw-backup-restore.skill" "skills\public\openclaw-backup-restore"
+```
+
 License: MIT
