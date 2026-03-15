@@ -85,4 +85,19 @@ Packs are pinned lists under `openclaw-bootstrap-helper/packs/`:
 - Skill folder: `openclaw-bootstrap-helper/`
 - Scripts for diagnostics + generating copy/paste commands.
 
+## Related skill: OpenClaw Backup & Restore
+
+This repo also includes `openclaw-backup-restore/`, a companion skill for:
+- pre-wipe external-disk backup of `~/.openclaw`
+- crash / reinstall recovery
+- staged restore after bootstrap-based reinstall
+- minimal-restore fallback when a full restore is unstable
+
+Typical use:
+- install / bootstrap OpenClaw first
+- restore user data from backup with the included recovery scripts
+
+Current location in repo:
+- `openclaw-backup-restore/`
+
 License: MIT
