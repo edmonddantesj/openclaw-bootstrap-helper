@@ -2,6 +2,9 @@
 README.md
 LICENSE
 openclaw-bootstrap-helper/
+openclaw-backup-restore/
 dist/
 openclaw-bootstrap-helper/scripts/
 openclaw-bootstrap-helper/references/
+openclaw-backup-restore/scripts/
+openclaw-backup-restore/references/
